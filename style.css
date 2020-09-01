@@ -66,19 +66,30 @@ a:hover{
     h1{
         text-align: center;
     }
-    nav{
-        text-align: center;
-    }
     nav ul{
         margin-top: 2.5em;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 4vw;
         margin-bottom: 5px;
     }
     nav ul li{
         margin-bottom: 10px;
+    }
+}
+.heading{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size:45px;
+}
+@media(max-width:830px){
+    .heading{
+        font-size: 30px;
+    }
+}
+@media(max-width:460px){
+    .heading{
+        font-size: 20px;
     }
 }
 h3{
@@ -109,21 +120,6 @@ img{
     padding-right: 18em;
     margin-left: 15em;
 }
-.heading{
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size:45px;
-}
-@media(max-width:830px){
-    .heading{
-        font-size: 30px;
-    }
-}
-@media(max-width:460px){
-    .heading{
-        font-size: 20px;
-    }
-}
 @media(max-width:980px){
     img{
         width: 13em;
@@ -139,15 +135,16 @@ img{
         margin-left: 7em;
     }
 }
-@media(max-width:780px){
+/*@media(max-width:680px){
     #pizza,#pasta,#cake{
         margin-right: 2em;
     }
     #dosa,#chole{
         margin-left: 2em;
     }
-}
-@media(max-width:460px){
+
+}*/
+@media(max-width:720px){
     h3{
         text-align: center;
     }
@@ -155,7 +152,6 @@ img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
     }
     .product{
         padding-left: 2em;
@@ -214,6 +210,14 @@ input,button,textarea{
     border-radius: 2px;
     cursor: pointer;
 }
+@media(max-width:){
+    form{
+        width:280px;
+    }
+    input,button,textarea,button{
+        width:250px;
+    }
+}
 footer{
     width: 100%;
     background: #303841;
@@ -230,7 +234,8 @@ footer{
     text-align: center;
     width: 100%;
     height: 50vh;
-    padding: 0 2em;
+    margin: 2em 0;
+    padding: 0 1em;
   }
   .contact-section-header > h2 {
     font-size: 4em;
@@ -238,6 +243,11 @@ footer{
   @media (max-width: 780px) {
     .contact-section-header > h2 {
       font-size: 2em;
+    }
+  }
+  @media (max-width: 560px) {
+    .contact-section-header > h2 {
+      font-size: 1.5em;
     }
   }
   
@@ -252,12 +262,24 @@ footer{
     margin-top: 2em;
     flex-wrap: wrap;
   }
-  
+
   .contact-details {
     font-size: 2em;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
   }
+  @media(max-width:780px){
+    .contact-section{
+        height: 80vh;
+    }
+    .contact-links{
+        width:60%;
+        flex-direction:column;
+    }
+    .contact-details{
+        font-size: 1.5em;
+    }
+}
   .contact-details:hover {
     transform: translateY(8px);
   }
