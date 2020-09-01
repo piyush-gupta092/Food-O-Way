@@ -219,14 +219,14 @@ input,button,textarea{
     border-radius: 2px;
     cursor: pointer;
 }
-@media(max-width:){
+/*@media(max-width:){
     form{
         width:280px;
     }
     input,button,textarea,button{
         width:250px;
     }
-}
+}*/
 #foot{
     background-color: #303841;
     height: 70vh;
@@ -282,6 +282,9 @@ footer{
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
   }
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
   @media(max-width:780px){
     .contact-section{
         height: 80vh;
@@ -293,8 +296,9 @@ footer{
     .contact-details{
         font-size: 1.5em;
     }
+    .contact-details:hover {
+        transform: translateX(5px);
+      }
 }
-  .contact-details:hover {
-    transform: translateY(8px);
-  }
+
   /*Personal Contact Section End*/
