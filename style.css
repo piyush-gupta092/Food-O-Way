@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    background-image:url("images/wooden.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#front{
+    background-image: url("images/restra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color: orange;
+}
+h1{
+    padding-top: 30px;
+    margin-left:4vw;
+}
+nav{
+    font-family: 'Comfortaa', cursive;
+    font-size:18px;
+    margin-right: 4vw;
+}
+nav ul{
+    width: 50vw;
+    float: right;
+    margin-top:-2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: mediumaquamarine;
+} 
+nav ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s linear;
+}
+a:hover{
+    background-color: #fff;
+    color: black;
+}
+@media(max-width:720px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        text-align: center;
+    }
+    nav ul{
+        margin-top: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4vw;
+        margin-bottom: 5px;
+    }
+    nav ul li{
+        margin-bottom: 10px;
+    }
+}
+h3{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+img{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+.product{
+    padding-left: 8vw;
+    padding-top: 3em;
+    padding-right: 8vw;
+    padding-bottom: 3em;
+    margin-bottom:1.5em;
+}
+#pizza,#pasta,#cake{
+    padding-left: 18em;
+    margin-top: -14em;
+    margin-right: 15em;
+}
+#productEven{
+    float: right;
+}
+#dosa,#chole{
+    padding-right: 18em;
+    margin-left: 15em;
+}
+.heading{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size:55px;
+}
+@media(max-width:980px){
+    img{
+        width: 13em;
+        height: 13em;
+    }
+    h3{
+        font-size: 28px;
+    }
+    .heading{
+        font-size: 45px;
+    }
+    #pizza,#pasta,#cake{
+        margin-right: 7em;
+    }
+    #dosa,#chole{
+        margin-left: 7em;
+    }
+}
+@media(max-width:780px){
+    #pizza,#pasta,#cake{
+        margin-right: 2em;
+    }
+    #dosa,#chole{
+        margin-left: 2em;
+    }
+}
+@media(max-width:460px){
+    .heading{
+        font-size: 45px;
+    }
+    h3{
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .product{
+        padding-left: 2em;
+        padding-top: 0.5em;
+        padding-right: 2em;
+        margin-bottom:0;
+    }
+    #productEven{
+        float: none;
+    }
+    #pizza,#pasta,#cake,#dosa,#chole{
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    /*{
+        float: left;
+        padding-right: 0;
+        margin-left: 0;
+        margin-left: 7em;
+        padding-bottom: 1em;
+    }*/
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    color: rgb(238, 186, 74);
+}
+form{
+    background-color: burlywood;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 75px;
+    margin-top: 15px;
+    margin-bottom: 2em;
+    border-radius: 0.25rem;
+    width:330px;
+    height: auto;
+}
+input,button,textarea{
+    width: 300px;
+    margin:0;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+#submit{
+    display: block;
+    width: 300px;
+    padding: 0.75em;
+    margin-left: 15px;
+    background: lightseagreen;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+@media(max-width:980px){
+    form{
+        
+    }
+}
+footer{
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    background: #303841;
+    border-top: 4px solid #be3144;
+}
+footer p{
+    margin: 2rem;
+}
