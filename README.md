@@ -1,1 +1,1 @@
-# Food-O-Way
+# Foodie
